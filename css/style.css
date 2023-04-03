@@ -3095,6 +3095,10 @@ fieldset {
     margin-bottom: 48px;
   }
 
+  .features__image {
+    display: none;
+  }
+
   .features__list-cnt::before {
     display: none;
   }

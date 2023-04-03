@@ -6,11 +6,109 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230404005120">
   <title>Asterizm</title>
 </head>
 
 <body>
+
+  <div class="gcc-popup">
+	<div class="gcc-popup__cnt">
+		<button class="gcc-popup__back-btn back-btn popup-toggler">Go back</button>
+		<h2 class="gcc-popup__title">Build secure cross-chain dApp</h2>
+		<div class="gcc-popup__menu">
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/documentation-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">Documentation</a>
+					<span class="gcc-popup__menu-item-caption">Read</span>
+				</div>
+			</div>
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/integration-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">Integration assistance + Grant</a>
+					<span class="gcc-popup__menu-item-caption">Apply</span>
+				</div>
+			</div>
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/community-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">Community Help</a>
+					<span class="gcc-popup__menu-item-caption">Go to Telegram</span>
+				</div>
+			</div>
+			<div class="gcc-popup__menu-item">
+				<div class="gcc-popup__menu-item-icon">
+					<img src="img/white-paper-icon.svg" alt="">
+				</div>
+				<div class="gcc-popup__menu-item-title">
+					<a href="" class="gcc-popup__menu-item-name">White paper</a>
+					<span class="gcc-popup__menu-item-caption">Explore White paper</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gcc-popup__back popup-toggler"></div>
+</div>
+  <div class="mobile-menu">
+	<header class="mobile-menu__header header">
+		<img class="header__logo" src="img/asterizm-logo.svg" width="183" height="32" alt="">					
+		<button class="header__menu-btn header__menu-btn_close menu-close"></button>
+	</header>
+
+	<nav class="main-menu main-menu_mobile">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">About</a>
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link" href="">Community</a>
+			<div class="dropdown">
+				<span class="dropdown__title">We are in social media</span>
+				<div class="dropdown__links">
+					<div class="dropdown__link">
+						<div class="dropdown__link-icon">
+							<img src="img/twitter-icon.svg" alt="">
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Twitter</span>
+							<a class="dropdown__link-caption" href="">Follow us</a>
+						</div>
+					</div>
+					<div class="dropdown__link">
+						<div class="dropdown__link-icon">
+							<img src="img/telegram-icon.svg" alt="">
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Telegram</span>
+							<a class="dropdown__link-caption" href="">Follow us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Docs</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Blog</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">White paper</a>
+		</li>
+	</ul>
+	<button class="main-menu__cta btn">Integration assistance</button>
+</nav>
+
+	<button class="mobile-menu__cta btn btn_primary">Integration assistance</button>
+</div>
 
   <div class="container">
     
@@ -19,29 +117,54 @@
         <div class="hero__content">
           
           <header class="header">
-	<img src="img/asterizm-logo.svg" width="183" height="32" alt="">
+	<img class="header__logo" src="img/asterizm-logo.svg" width="183" height="32" alt="">
 	
-	<nav class="main-menu">
-		<ul class="main-menu__list">
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">About</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Community</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Docs</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">Blog</a>
-			</li>
-			<li class="main-menu__item">
-				<a class="main-menu__link" href="">White paper</a>
-			</li>
-		</ul>
-	</nav>
+	<nav class="main-menu main-menu_header">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">About</a>
+		</li>
+		<li class="main-menu__item main-menu__item_dropdown">
+			<a class="main-menu__link" href="">Community</a>
+			<div class="dropdown">
+				<span class="dropdown__title">We are in social media</span>
+				<div class="dropdown__links">
+					<div class="dropdown__link">
+						<div class="dropdown__link-icon">
+							<img src="img/twitter-icon.svg" alt="">
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Twitter</span>
+							<a class="dropdown__link-caption" href="">Follow us</a>
+						</div>
+					</div>
+					<div class="dropdown__link">
+						<div class="dropdown__link-icon">
+							<img src="img/telegram-icon.svg" alt="">
+						</div>
+						<div class="dropdown__link-title">
+							<span class="dropdown__link-name">Telegram</span>
+							<a class="dropdown__link-caption" href="">Follow us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Docs</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Blog</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">White paper</a>
+		</li>
+	</ul>
+	<button class="main-menu__cta btn">Integration assistance</button>
+</nav>
 
-	<button class="btn">Integration assistance</button>
+	<button class="header__cta btn">Integration assistance</button>
+	<button class="header__menu-btn menu-open"></button>
 </header>
 
           <div class="hero__text-block">
@@ -53,7 +176,7 @@
               Save money on transactions, avoid regulatory fines and avoid data theft risks with Asterizm
             </span>
             <div class="hero__cta">
-              <a class="btn btn_primary" href="">
+              <a class="hero__main-btn btn btn_primary" href="">
                 Go cross-chain!
                 <img src="img/btn-arrow.svg" width="20" height="11" alt="">
               </a>
@@ -81,6 +204,7 @@
               <img src="img/privacy-icon.svg" alt="">
               <h2 class="why-asterizm__item-title primary-title">
                 Privacy
+                <img src="img/card-mobile-arrow.svg" alt="">
               </h2>
               <div class="why-asterizm__item-back">
                 <span>With Asterizm, you can transfer sensitive data to other networks without the risk of compromise at the Relayer level.</span>
@@ -94,6 +218,7 @@
               <img src="img/high-speed-icon.svg" alt="">
               <h2 class="why-asterizm__item-title primary-title">
                 High Speed<br>Low Cost 
+                <img src="img/card-mobile-arrow.svg" alt="">
               </h2>
               <div class="why-asterizm__item-back">
                 <span>Thanks to the encryption-based protocol architecture, we don’t maintain a complex economic system to achieve consensus.</span>
@@ -104,6 +229,7 @@
               <img src="img/flexibility-icon.svg" alt="">
               <h2 class="why-asterizm__item-title primary-title">
                 Flexibility
+                <img src="img/card-mobile-arrow.svg" alt="">
               </h2>
               <div class="why-asterizm__item-back">
                 <span>The architecture allows to embed Asterizm Client module into any infrastructure used by the client dApp in compliance with the security policies and access levels.</span>                
@@ -113,6 +239,7 @@
               <img src="img/scalability-icon.svg" alt="">
               <h2 class="why-asterizm__item-title primary-title">
                 Scalability
+                <img src="img/card-mobile-arrow.svg" alt="">
               </h2>
               <div class="why-asterizm__item-back">
                 <span>Asterizm is easily scalable — an increase in the number of transactions does not affect the stability of the protocol, the speed or the cost of transactions.</span>                
@@ -178,7 +305,7 @@
       <div class="wrap">
         <div class="supported__cnt">
           <h2 class="supported__title primary-title">Chains supported</h2>
-          <img class="supported__image" src="img/supported-image.png" alt="">
+          <picture><source srcset="img/supported-image.webp" type="image/webp"><img class="supported__image" src="img/supported-image.png" alt=""></picture>
         </div>
       </div>
     </section>
@@ -194,36 +321,54 @@
               <div class="features__list">
                 <div class="features__list-content">
                   <div class="features__list-item">
-                    <h3 class="features__list-item-title">Manage liquidity in multiple chains</h3>
+                    <div class="features__list-item-image">
+                      <img src="img/manage-liquidity-image.svg" alt="">
+                    </div>
+                    <h3 class="features__list-item-title">Manage liquidity in&nbsp;multiple chains</h3>
                     <span class="features__list-item-content">
                       Create blockchain bridges, cross-chain DEXes and other liquidity solutions across networks.
                     </span>
                   </div>
                   <div class="features__list-item">
+                    <div class="features__list-item-image">
+                      <img src="img/cross-chain-farming-image.svg" alt="">
+                    </div>
                     <h3 class="features__list-item-title">Cross-chain farming strategies</h3>
                     <span class="features__list-item-content">
                       Implement effective revenue strategies by taking advantage of the best opportunities in each network.
                     </span>
                   </div>                            
                   <div class="features__list-item">
+                    <div class="features__list-item-image">
+                      <img src="img/social-communications-image.svg" alt="">
+                    </div>
                     <h3 class="features__list-item-title">Social communications</h3>
                     <span class="features__list-item-content">
                       Unite the Web3 community — create messengers and other communication products.
                     </span>
                   </div>                            
                   <div class="features__list-item">
+                    <div class="features__list-item-image">
+                      <img src="img/cross-chain-image.svg" alt="">
+                    </div>
                     <h3 class="features__list-item-title">Cross-chain GameFi & NFT</h3>
                     <span class="features__list-item-content">
                       Create omnichain marketplaces and NFT bridges, and aggregate communities from different networks in your product.
                     </span>
                   </div>                            
                   <div class="features__list-item">
+                    <div class="features__list-item-image">
+                      <img src="img/cbdc-image.svg" alt="">
+                    </div>
                     <h3 class="features__list-item-title">CBDCs & Fintech</h3>
                     <span class="features__list-item-content">
                       Take advantage of confidential cross-chain transactions for financial messaging and liquidity management across public and private networks.
                     </span>
                   </div>                            
                   <div class="features__list-item">
+                    <div class="features__list-item-image">
+                      <img src="img/dao-image.svg" alt="">
+                    </div>
                     <h3 class="features__list-item-title">Cross-chain DAO</h3>
                     <span class="features__list-item-content">
                       Activate community members to develop the protocol regardless of the native governance network of your project.
@@ -232,7 +377,7 @@
                 </div>                
               </div>
             </div>            
-            <img class="features__image" src="img/features-image.jpg" alt="">
+            <picture><source srcset="img/features-image.webp" type="image/webp"><img class="features__image" src="img/features-image.jpg" alt=""></picture>
           </div>
         </div>
       </div>
@@ -244,7 +389,11 @@
         <div class="wrap">
           <div class="how-it-works__content">
             <div class="how-it-works__scheme-cnt">
-              <img src="img/scheme.png" alt="">
+              <picture>
+                <source srcset="img/scheme.png" media="(min-width: 769px)">  
+                <source srcset="img/scheme_mobile.png" media="(max-width: 768px)">  
+                <img class="how-it-works__scheme" src="img/scheme.png" alt="">
+              </picture>              
             </div>
             <div class="how-it-works__links">
               <div class="how-it-works__link">
@@ -331,11 +480,11 @@
               <span>Step 2a</span>
             </div>
             <div class="steps__list-item">
-              <span>Step 3</span>
-            </div>
-            <div class="steps__list-item">
               <span>Step 3a</span>
             </div>
+            <div class="steps__list-item">
+              <span>Step 3</span>
+            </div>            
             <div class="steps__list-item">
               <span>Step 4</span>
             </div>
@@ -387,17 +536,17 @@
               </p>
             </div>
             <div class="steps__description-item swiper-slide">
-              <h3 class="steps__description-title primary-title">Step 3</h3>
-              <p class="steps__description-text">
-                <span>The client’s off-chain module encrypts the cross-chain transaction content and sends it back to the client’s smart contract in the source Initializer network, calling the cross-chain transfer initialization method.</span>
-              </p>
-            </div>
-            <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 3a</h3>
               <p class="steps__description-text">
                 <span>The client's assets arrive at the target contract in the destination network.</span>
               </p>
             </div>
+            <div class="steps__description-item swiper-slide">
+              <h3 class="steps__description-title primary-title">Step 3</h3>
+              <p class="steps__description-text">
+                <span>The client’s off-chain module encrypts the cross-chain transaction content and sends it back to the client’s smart contract in the source Initializer network, calling the cross-chain transfer initialization method.</span>
+              </p>
+            </div>            
             <div class="steps__description-item swiper-slide">
               <h3 class="steps__description-title primary-title">Step 4</h3>
               <p class="steps__description-text">
@@ -459,8 +608,9 @@
                 </span>
               </p>
             </div>
-          </div>           
-        </div>        
+          </div>            
+        </div>    
+        <div class="steps__slider-pagination"></div>    
         <button class="steps__slider-btn steps__slider-btn_prev"></button>       
         <button class="steps__slider-btn steps__slider-btn_next"></button>       
       </div>      
@@ -472,7 +622,8 @@
           <h2 class="onboarding__title primary-title">Go cross-chain in 3 easy steps</h2>
           <div class="onboarding__content">
             <div class="onboarding__item">
-              <img src="img/num-1-icon.svg" alt="">
+              <picture><source srcset="img/step-1-image.webp" type="image/webp"><img class="onboarding__item-image" src="img/step-1-image.png" alt=""></picture>
+              <img class="onboarding__item-num" src="img/num-1-icon.svg" alt="">
               <div class="onboarding__item-content">
                 <h3 class="onboarding__item-title">Set up the off-chain module</h3>
                 <span class="onboarding__item-text">
@@ -481,7 +632,8 @@
               </div>
             </div>
             <div class="onboarding__item">
-              <img src="img/num-2-icon.svg" alt="">
+              <picture><source srcset="img/step-2-image.webp" type="image/webp"><img class="onboarding__item-image" src="img/step-2-image.png" alt=""></picture>
+              <img class="onboarding__item-num" src="img/num-2-icon.svg" alt="">
               <div class="onboarding__item-content">
                 <h3 class="onboarding__item-title">Deploy smart contract in preferred chains</h3>
                 <span class="onboarding__item-text">
@@ -491,7 +643,8 @@
               </div>
             </div>
             <div class="onboarding__item">
-              <img src="img/num-3-icon.svg" alt="">
+              <picture><source srcset="img/step-3-image.webp" type="image/webp"><img class="onboarding__item-image" src="img/step-3-image.png" alt=""></picture>
+              <img class="onboarding__item-num" src="img/num-3-icon.svg" alt="">
               <div class="onboarding__item-content">
                 <h3 class="onboarding__item-title">Run cross-chain operations!</h3>
                 <span class="onboarding__item-text">
@@ -549,15 +702,15 @@
               <div class="swiper-wrapper">
                 <div class="examples__tab-content-item swiper-slide">
                   <h3 class="examples__tab-content-title">Claimer.sol</h3>
-                  <img src="img/claimer-code-image.png" alt="">
+                  <picture><source srcset="img/claimer-code-image.webp" type="image/webp"><img src="img/claimer-code-image.png" alt=""></picture>
                 </div>
                 <div class="examples__tab-content-item swiper-slide">
                   <h3 class="examples__tab-content-title">MultichainToken.sol</h3>
-                  <img src="img/gas-station-code-image.png" alt="">
+                  <picture><source srcset="img/gas-station-code-image.webp" type="image/webp"><img src="img/gas-station-code-image.png" alt=""></picture>
                 </div>
                 <div class="examples__tab-content-item swiper-slide">
                   <h3 class="examples__tab-content-title">GasStation.sol</h3>
-                  <img src="img/claimer-code-image.png" alt="">
+                  <picture><source srcset="img/claimer-code-image.webp" type="image/webp"><img src="img/claimer-code-image.png" alt=""></picture>
                 </div>
               </div>             
             </div>            
@@ -575,50 +728,58 @@
     </section>
 
     <section class="faq">
-      <h2 class="faq__title primary-title">Frequently Asked Questions</h2>
-      <div class="faq__list">
-        <div class="faq__list-item active">
-          <div class="faq__list-item-header">
-            <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
-            <button class="collapse-btn faq-toggler"></button>
-          </div>          
-          <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+      <div class="wrap">
+        <div class="faq__cnt">
+          <h2 class="faq__title primary-title">Frequently Asked Questions</h2>
+          <div class="faq__list">
+            <div class="faq__list-item active">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+            <div class="faq__list-item">
+              <div class="faq__list-item-header">
+                <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
+                <button class="collapse-btn faq-toggler"></button>
+              </div>          
+              <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
+            </div>
+          </div>
         </div>
-        <div class="faq__list-item">
-          <div class="faq__list-item-header">
-            <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
-            <button class="collapse-btn faq-toggler"></button>
-          </div>          
-          <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
-        </div>
-        <div class="faq__list-item">
-          <div class="faq__list-item-header">
-            <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
-            <button class="collapse-btn faq-toggler"></button>
-          </div>          
-          <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
-        </div>
-        <div class="faq__list-item">
-          <div class="faq__list-item-header">
-            <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
-            <button class="collapse-btn faq-toggler"></button>
-          </div>          
-          <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
-        </div>
-        <div class="faq__list-item">
-          <div class="faq__list-item-header">
-            <h3 class="faq__list-item-title faq-toggler">What is Asterizm</h3>            
-            <button class="collapse-btn faq-toggler"></button>
-          </div>          
-          <p class="faq__list-item-content">Asterizm provides an on-chain and off-chain infrastructure to process any cross-chain operations based on app developer business logic in a secure and trustless way</p>
-        </div>
-      </div>
+      </div>      
     </section>
 
     <footer class="footer @@className">
 	<div class="wrap">
 		<div class="footer__cnt">			
-			<img class="footer__logo" src="img/footer-logo.svg" alt="">
+			<picture>
+				<source srcset="img/footer-logo.svg" media="(min-width: 769px)">
+				<source srcset="img/footer-logo_mobile.svg" media="(max-width: 768px)">
+				<img class="footer__logo" src="img/footer-logo.svg" alt="">
+			</picture>			
 			<div class="footer__menu">
 				<div class="footer__menu-col">
 					<span class="footer__menu-title">Product</span>
@@ -665,6 +826,6 @@
 </footer>
   </div>
 
-  <script src="./js/app.min.js"></script>
+  <script src="./js/app.min.js?_v=20230404005120"></script>
 </body>
 </html>

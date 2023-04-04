@@ -1362,52 +1362,44 @@ template {
           align-items: flex-start;
 }
 
-.features__image {
+.features__image-cnt {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
   width: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: right top;
-     object-position: right top;
+  height: 100vh;
+  position: sticky;
+  top: 80px;
 }
 
-.features__list-cnt {
+.features__image {
+  width: 100%;
+  padding-top: 100%;
+  background: url("../img/features-image-bg.png") no-repeat center;
+  background-size: contain;
   position: relative;
 }
 
-.features__list-cnt::before {
-  content: "";
-  width: 100%;
-  height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#020514), to(transparent));
-  background: -o-linear-gradient(top, #020514 0%, transparent 100%);
-  background: linear-gradient(to bottom, #020514 0%, transparent 100%);
+.features__image img {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
 }
 
-.features__list-cnt::after {
-  content: "";
-  width: 100%;
-  height: 250px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#020514), to(transparent));
-  background: -o-linear-gradient(bottom, #020514 0%, transparent 100%);
-  background: linear-gradient(to top, #020514 0%, transparent 100%);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.features__image img.active {
+  opacity: 1;
 }
 
 .features__list {
-  height: 600px;
-  overflow-y: scroll;
   position: relative;
+  padding: 60px 0;
 }
 
 .features__list::-webkit-scrollbar {
@@ -1429,6 +1421,7 @@ template {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-bottom: 100px;
 }
 
 .features__list-item {
@@ -2306,13 +2299,13 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 170px;
+  gap: 208px;
   border-radius: 24px;
   background: url("../img/onboarding-item-bg.jpg") no-repeat center;
   background-size: cover;
   border: 1px solid #2C2D54;
   position: relative;
-  padding: 24px 80px 24px 50px;
+  padding: 24px 80px 24px 32px;
 }
 
 .onboarding__item-content {
@@ -2327,12 +2320,19 @@ template {
   padding: 24px 0 24px 60px;
 }
 
+.onboarding__item-num {
+  width: 50px;
+  margin-top: 8px;
+}
+
 .onboarding__item-image {
   position: absolute;
-  width: 74px;
-  height: 88px;
-  top: 0;
-  left: 24px;
+  width: 134px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 101px;
 }
 
 .onboarding__item-title {
@@ -2360,10 +2360,6 @@ template {
 
 .onboarding__item-text img {
   width: 80%;
-}
-
-.onboarding__item img {
-  margin-top: 30px;
 }
 
 .primary-subtitle {
@@ -2918,7 +2914,6 @@ fieldset {
   min-width: 320px;
   background: #020514 url("../img/stars-bg.png") repeat-y center;
   background-size: contain;
-  overflow: hidden;
   padding: 0 20px;
 }
 
@@ -2947,10 +2942,6 @@ fieldset {
   }
 
   .header__menu-btn {
-    display: none;
-  }
-
-  .onboarding__item-image {
     display: none;
   }
 
@@ -3053,15 +3044,7 @@ fieldset {
     margin-bottom: 48px;
   }
 
-  .features__image {
-    display: none;
-  }
-
-  .features__list-cnt::before {
-    display: none;
-  }
-
-  .features__list-cnt::after {
+  .features__image-cnt {
     display: none;
   }
 
@@ -3256,6 +3239,16 @@ fieldset {
     width: 46px;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+
+  .onboarding__item-image {
+    width: 74px;
+    height: 88px;
+    top: 0;
+    left: 24px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 
   .onboarding__item-title {

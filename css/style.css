@@ -1916,8 +1916,9 @@ template {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 120%;
+  width: 100%;
   z-index: 3;
+  border-radius: 0 0 24px 24px;
 }
 
 .hero__text-block {
@@ -2826,6 +2827,8 @@ template {
       -ms-flex-align: center;
           align-items: center;
   gap: 34px;
+  position: relative;
+  z-index: 4;
 }
 
 .supported__networks-top {
@@ -3222,10 +3225,15 @@ fieldset {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 37px 20px;
+    padding: 0 20px 37px 20px;
+  }
+
+  .data__content-item img {
+    width: 185px;
   }
 
   .data__content-item-text {
+    font-size: 24px;
     background: none;
     padding-bottom: 25px;
   }
@@ -3534,7 +3542,7 @@ fieldset {
 
   .steps__description-cnt {
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .steps__description {
@@ -3582,14 +3590,22 @@ fieldset {
     display: none;
   }
 
+  .supported__networks {
+    gap: 11px;
+  }
+
+  .supported__networks-top,
+  .supported__networks-bottom {
+    gap: 18px;
+  }
+
   .supported__networks-top {
-    -webkit-animation-duration: 60s;
-            animation-duration: 60s;
+    -webkit-animation: translateLogos 60s linear infinite;
+            animation: translateLogos 60s linear infinite;
   }
 
   .supported__networks-bottom {
-    -webkit-animation-duration: 60s;
-            animation-duration: 60s;
+    animation: translateLogos 60s linear reverse infinite;
   }
 
   .why-asterizm {

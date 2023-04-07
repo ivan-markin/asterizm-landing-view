@@ -3230,6 +3230,10 @@ fieldset {
     padding-bottom: 25px;
   }
 
+  .examples__glow {
+    display: none;
+  }
+
   .examples__tabs-item-header {
     height: auto;
     padding: 30px 18px;
@@ -3576,6 +3580,16 @@ fieldset {
 
   .supported__logo {
     display: none;
+  }
+
+  .supported__networks-top {
+    -webkit-animation-duration: 60s;
+            animation-duration: 60s;
+  }
+
+  .supported__networks-bottom {
+    -webkit-animation-duration: 60s;
+            animation-duration: 60s;
   }
 
   .why-asterizm {

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230404202351">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230407140301">
   <title>Asterizm</title>
 </head>
 
@@ -116,7 +116,7 @@
       <div class="wrap">
         <div class="hero__content">
           
-          <header class="header">
+          <header class="header header_main">
 	<img class="header__logo" src="img/asterizm-logo.svg" width="183" height="32" alt="">
 	
 	<nav class="main-menu main-menu_header">
@@ -167,6 +167,9 @@
 	<button class="header__menu-btn menu-open"></button>
 </header>
 
+          <img class="hero__bg-image" src="img/hero-image.png" alt="">
+          <img class="hero__bottom-glow" src="img/hero-bottom-glow.png" alt="">
+
           <div class="hero__text-block">
             <span class="hero__top-title">Introducing Asterizm</span>
             <h1 class="hero__title primary-title">
@@ -200,55 +203,81 @@
         <div class="why-asterizm__cnt">
           <h2 class="why-asterizm__title primary-title">Why Asterizm?</h2>
           <div class="why-asterizm__content">
-            <div class="why-asterizm__item privacy">
-              <img src="img/privacy-icon.svg" alt="">
-              <h2 class="why-asterizm__item-title primary-title">
-                Privacy
-                <img src="img/card-mobile-arrow.svg" alt="">
-              </h2>
-              <div class="why-asterizm__item-back">
-                <span>With Asterizm, you can transfer sensitive data to other networks without the risk of compromise at the Relayer level.</span>
-                <div class="why-asterizm__item-iconed">
-                  <img src="img/eye-slash-icon.svg" alt="">
-                  <span>No more front-running and data leaks!</span>
-                </div>                
+            <div class="why-asterizm__item-cnt">
+              
+              <div class="why-asterizm__item privacy">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/privacy-block-bg.jpg" alt="">
+                  <img class="why-asterizm__item-icon" src="img/privacy-icon.svg" alt="">
+                  <h2 class="why-asterizm__item-title">
+                    Privacy
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                </div>              
+                <div class="why-asterizm__item-back">
+                  <img class="why-asterizm__item-bg why-asterizm__item-bg_back" src="img/privacy-back-bg.svg" width="440" height="200" alt="">
+                  <span>With Asterizm, you can transfer sensitive data to&nbsp;other networks without the risk of compromise at&nbsp;the Relayer level.</span>
+                  <div class="why-asterizm__item-iconed">
+                    <img src="img/eye-slash-icon.svg" alt="">
+                    <span>No more front-running and data leaks!</span>
+                  </div>                
+                </div>
               </div>
-            </div>
-            <div class="why-asterizm__item high-speed">
-              <img src="img/high-speed-icon.svg" alt="">
-              <h2 class="why-asterizm__item-title primary-title">
-                High Speed<br>Low Cost 
-                <img src="img/card-mobile-arrow.svg" alt="">
-              </h2>
-              <div class="why-asterizm__item-back">
-                <span>Thanks to the encryption-based protocol architecture, we don’t maintain a complex economic system to achieve consensus.</span>
-                <span>This allows all cross-chain transactions to flow almost instantly and at one of the lowest fees on the market.</span>              
-              </div>
-            </div>
-            <div class="why-asterizm__item flexibility">
-              <img src="img/flexibility-icon.svg" alt="">
-              <h2 class="why-asterizm__item-title primary-title">
-                Flexibility
-                <img src="img/card-mobile-arrow.svg" alt="">
-              </h2>
-              <div class="why-asterizm__item-back">
-                <span>The architecture allows to embed Asterizm Client module into any infrastructure used by the client dApp in compliance with the security policies and access levels.</span>                
-              </div>
-            </div>
-            <div class="why-asterizm__item scalability">
-              <img src="img/scalability-icon.svg" alt="">
-              <h2 class="why-asterizm__item-title primary-title">
-                Scalability
-                <img src="img/card-mobile-arrow.svg" alt="">
-              </h2>
-              <div class="why-asterizm__item-back">
-                <span>Asterizm is easily scalable — an increase in the number of transactions does not affect the stability of the protocol, the speed or the cost of transactions.</span>                
-                <div class="why-asterizm__item-iconed">
-                  <img src="img/dev-icon.svg" alt="">
-                  <span>Developed for high<br>load systems</span>
+            </div>            
+            
+            <div class="why-asterizm__item-cnt">
+              <div class="why-asterizm__item high-speed">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/high-speed-block-bg.jpg" alt="">
+                  <img class="why-asterizm__item-icon" src="img/high-speed-icon.svg" alt="">
+                  <h2 class="why-asterizm__item-title">
+                    High Speed<br>Low Cost 
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                </div>              
+                <div class="why-asterizm__item-back">                  
+                  <span>Thanks to&nbsp;the encryption-based protocol architecture, we don’t maintain a&nbsp;complex economic system to&nbsp;achieve consensus.</span>
+                  <span>This allows all cross-chain transactions to&nbsp;flow almost instantly and at&nbsp;one of&nbsp;the lowest fees on&nbsp;the market.</span>              
                 </div>
               </div>
             </div>
+            
+            <div class="why-asterizm__item-cnt">
+              <div class="why-asterizm__item flexibility">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/flexibility-block-bg.jpg" alt="">
+                  <img class="why-asterizm__item-icon" src="img/flexibility-icon.svg" alt="">
+                  <h2 class="why-asterizm__item-title">
+                    Flexibility
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                </div>              
+                <div class="why-asterizm__item-back">                  
+                  <span>The architecture allows to&nbsp;embed Asterizm Client module into any infrastructure used by&nbsp;the client dApp in&nbsp;compliance with the security policies and access levels.</span>                
+                </div>
+              </div>
+            </div>
+            
+            <div class="why-asterizm__item-cnt">
+              <div class="why-asterizm__item scalability">
+                <div class="why-asterizm__item-front">
+                  <img class="why-asterizm__item-bg" src="img/scalability-block-bg.jpg" alt="">
+                  <img class="why-asterizm__item-icon" src="img/scalability-icon.svg" alt="">
+                  <h2 class="why-asterizm__item-title">
+                    Scalability
+                    <img src="img/card-mobile-arrow.svg" alt="">
+                  </h2>
+                </div>              
+                <div class="why-asterizm__item-back">
+                  <img class="why-asterizm__item-bg" src="img/scalability-back-bg.svg" width="498" height="195" alt="">
+                  <span>Asterizm is&nbsp;easily scalable — an&nbsp;increase in&nbsp;the number of&nbsp;transactions does not affect the stability of&nbsp;the protocol, the speed or&nbsp;the cost of&nbsp;transactions.</span>                
+                  <div class="why-asterizm__item-iconed">
+                    <img src="img/dev-icon.svg" alt="">
+                    <span>Developed for high<br>load systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>            
           </div>          
         </div>
       </div>
@@ -301,13 +330,64 @@
       </div>
     </section>
 
-    <section class="supported">
-      <div class="wrap">
-        <div class="supported__cnt">
-          <h2 class="supported__title primary-title">Chains supported</h2>
-          <img class="supported__image" src="img/supported-image.png" alt="">
+    <section class="supported">      
+      <div class="supported__cnt">
+        <h2 class="supported__title primary-title">Chains supported</h2>        
+        <div class="supported__networks-cnt">
+          <div class="supported__networks">
+            <div class="supported__networks-top">
+              <img src="img/nw-top-1.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-2.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-3.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-4.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-5.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-6.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-7.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-8.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-9.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-10.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-11.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-12.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-13.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-14.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-15.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-16.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-17.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-18.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-19.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-20.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-21.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-22.svg" width="109" height="109" alt="">
+              <img src="img/nw-top-23.svg" width="109" height="109" alt="">
+            </div>
+            <div class="supported__networks-bottom">
+              <img src="img/nw-bottom-1.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-2.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-3.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-4.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-5.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-6.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-7.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-8.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-9.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-10.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-11.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-12.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-13.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-14.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-15.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-16.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-17.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-18.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-19.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-20.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-21.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-22.svg" width="109" height="109" alt="">
+              <img src="img/nw-bottom-23.svg" width="109" height="109" alt="">
+            </div>
+          </div>
         </div>
-      </div>
+      </div>      
     </section>
 
     <section class="features">
@@ -671,6 +751,7 @@
         <div class="examples__cnt">
           <h2 class="examples__title primary-title">Examples</h2>
           <div class="examples__content">
+            <img src="img/examples-glow.png" class="examples__glow" alt="">
             <div class="examples__tabs">
               <div class="examples__tabs-cnt">
                 <div class="examples__tabs-item active">
@@ -709,18 +790,9 @@
             </div>
             <div class="examples__tab-content swiper">
               <div class="swiper-wrapper">
-                <div class="examples__tab-content-item swiper-slide">
-                  <h3 class="examples__tab-content-title">Claimer.sol</h3>
-                  <img src="img/claimer-code-image.png" alt="">
-                </div>
-                <div class="examples__tab-content-item swiper-slide">
-                  <h3 class="examples__tab-content-title">MultichainToken.sol</h3>
-                  <img src="img/gas-station-code-image.png" alt="">
-                </div>
-                <div class="examples__tab-content-item swiper-slide">
-                  <h3 class="examples__tab-content-title">GasStation.sol</h3>
-                  <img src="img/claimer-code-image.png" alt="">
-                </div>
+                <img class="examples__tab-content-item swiper-slide" src="img/claimer-frame.svg" alt="">
+                <img class="examples__tab-content-item swiper-slide" src="img/multichain-frame.svg" alt="">
+                <img class="examples__tab-content-item swiper-slide" src="img/gas-station-frame.svg" alt="">                
               </div>             
             </div>            
           </div>
@@ -835,6 +907,6 @@
 </footer>
   </div>
 
-  <script src="./js/app.min.js?_v=20230404202351"></script>
+  <script src="./js/app.min.js?_v=20230407140301"></script>
 </body>
 </html>

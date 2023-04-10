@@ -6,11 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230407175656">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230410201225">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230410201225" rel="stylesheet">
   <title>Asterizm</title>
 </head>
 
 <body>
+
+  <div id="particles-js"></div>
 
   <div class="gcc-popup">
 	<div class="gcc-popup__cnt">
@@ -189,6 +192,8 @@
             </div>
           </div>
 
+          <img class="hero__secure-badge" src="img/secure-badge.svg" alt="">
+
           <div class="hero__scroll-down">
             <img src="img/mouse-icon.svg" width="27" height="46" alt="">
             Scroll to explore
@@ -198,7 +203,7 @@
       </div>
     </section>
 
-    <section class="why-asterizm">
+    <section class="why-asterizm" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <div class="wrap">        
         <div class="why-asterizm__cnt">
           <h2 class="why-asterizm__title primary-title">Why Asterizm?</h2>
@@ -207,15 +212,15 @@
               
               <div class="why-asterizm__item privacy">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/privacy-block-bg.jpg" alt="">
-                  <img class="why-asterizm__item-icon" src="img/privacy-icon.svg" alt="">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
                   <h2 class="why-asterizm__item-title">
                     Privacy
                     <img src="img/card-mobile-arrow.svg" alt="">
                   </h2>
+                  <img class="why-asterizm__item-icon" src="img/privacy-icon.svg" alt="">
                 </div>              
                 <div class="why-asterizm__item-back">
-                  <img class="why-asterizm__item-bg why-asterizm__item-bg_back" src="img/privacy-back-bg.svg" width="440" height="200" alt="">
+                  <img class="why-asterizm__item-bg-back" src="img/privacy-back-bg.svg" width="155" height="176" alt="">
                   <span>With Asterizm, you can transfer sensitive data to&nbsp;other networks without the risk of compromise at&nbsp;the Relayer level.</span>
                   <div class="why-asterizm__item-iconed">
                     <img src="img/eye-slash-icon.svg" alt="">
@@ -228,12 +233,12 @@
             <div class="why-asterizm__item-cnt">
               <div class="why-asterizm__item high-speed">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/high-speed-block-bg.jpg" alt="">
-                  <img class="why-asterizm__item-icon" src="img/high-speed-icon.svg" alt="">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">              
                   <h2 class="why-asterizm__item-title">
                     High Speed<br>Low Cost 
                     <img src="img/card-mobile-arrow.svg" alt="">
                   </h2>
+                  <img class="why-asterizm__item-icon" src="img/high-speed-icon.svg" alt="">
                 </div>              
                 <div class="why-asterizm__item-back">                  
                   <span>Thanks to&nbsp;the encryption-based protocol architecture, we don’t maintain a&nbsp;complex economic system to&nbsp;achieve consensus.</span>
@@ -245,12 +250,12 @@
             <div class="why-asterizm__item-cnt">
               <div class="why-asterizm__item flexibility">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/flexibility-block-bg.jpg" alt="">
-                  <img class="why-asterizm__item-icon" src="img/flexibility-icon.svg" alt="">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-right.png" alt="">                  
                   <h2 class="why-asterizm__item-title">
                     Flexibility
                     <img src="img/card-mobile-arrow.svg" alt="">
                   </h2>
+                  <img class="why-asterizm__item-icon" src="img/flexibility-icon.svg" alt="">
                 </div>              
                 <div class="why-asterizm__item-back">                  
                   <span>The architecture allows to&nbsp;embed Asterizm Client module into any infrastructure used by&nbsp;the client dApp in&nbsp;compliance with the security policies and access levels.</span>                
@@ -261,15 +266,15 @@
             <div class="why-asterizm__item-cnt">
               <div class="why-asterizm__item scalability">
                 <div class="why-asterizm__item-front">
-                  <img class="why-asterizm__item-bg" src="img/scalability-block-bg.jpg" alt="">
-                  <img class="why-asterizm__item-icon" src="img/scalability-icon.svg" alt="">
+                  <img class="why-asterizm__item-bg" src="img/card-bg-left.png" alt="">                  
                   <h2 class="why-asterizm__item-title">
                     Scalability
                     <img src="img/card-mobile-arrow.svg" alt="">
                   </h2>
+                  <img class="why-asterizm__item-icon" src="img/scalability-icon.svg" alt="">
                 </div>              
                 <div class="why-asterizm__item-back">
-                  <img class="why-asterizm__item-bg" src="img/scalability-back-bg.svg" width="498" height="195" alt="">
+                  <img class="why-asterizm__item-bg-back" src="img/scalability-back-bg.png" width="154" height="166" alt="">
                   <span>Asterizm is&nbsp;easily scalable — an&nbsp;increase in&nbsp;the number of&nbsp;transactions does not affect the stability of&nbsp;the protocol, the speed or&nbsp;the cost of&nbsp;transactions.</span>                
                   <div class="why-asterizm__item-iconed">
                     <img src="img/dev-icon.svg" alt="">
@@ -283,7 +288,7 @@
       </div>
     </section>
 
-    <section class="data">
+    <section class="data" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <div class="wrap">
         <div class="data__cnt">
           <h2 class="data__title primary-title">Your data belongs to you</h2>
@@ -330,11 +335,11 @@
       </div>
     </section>
 
-    <section class="supported">      
+    <section class="supported" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">      
       <div class="supported__cnt">
         <h2 class="supported__title primary-title">Chains supported</h2>        
         <div class="supported__networks-cnt">
-          <img class="supported__logo" src="img/supports-logo.svg" alt="">
+          <img class="supported__logo" src="img/supports-logo.png" width="664" height="339" alt="">
           <div class="supported__networks">
             <div class="supported__networks-top">
               <img src="img/nw-top-1.svg" width="109" height="109" alt="">
@@ -473,16 +478,16 @@
       </div>
     </section>
 
-    <section class="how-it-works">            
+    <section class="how-it-works" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">            
       <h2 class="how-it-works__title primary-title">How it works</h2>
       <div class="how-it-works__cnt">
         <div class="wrap">
           <div class="how-it-works__content">
             <div class="how-it-works__scheme-cnt">
               <picture>
-                <source srcset="img/scheme.png" media="(min-width: 769px)">  
-                <source srcset="img/scheme_mobile.png" media="(max-width: 768px)">  
-                <img class="how-it-works__scheme" src="img/scheme.png" alt="">
+                <source srcset="img/scheme-desktop.svg" media="(min-width: 769px)">  
+                <source srcset="img/scheme-mobile.svg" media="(max-width: 768px)">  
+                <img class="how-it-works__scheme" src="img/scheme-desktop.svg" alt="">
               </picture>              
             </div>
             <div class="how-it-works__links">
@@ -531,7 +536,7 @@
         <div class="wrap">
           <div class="how-it-works__description-cnt">
             <h3 class="how-it-works__description-title primary-title">
-              Asterizm secures cross-chain transactions using both on-chain and off-chain modules:
+              Asterizm secures cross-chain transactions using both on-chain and off-chain modules:
             </h3>
             <div class="how-it-works__description-blocks">
               <div class="how-it-works__description-block">
@@ -552,7 +557,7 @@
       </div>      
     </section>
 
-    <section class="steps">
+    <section class="steps" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <h2 class="steps__title primary-title">Cross-chain transaction flow</h2>
       <!-- <p class="steps__subtitle">
         Get Started Now! It won't take you long to get ready, and the result will not make itself long to wait!
@@ -706,7 +711,7 @@
       </div>      
     </section>
 
-    <section class="onboarding">
+    <section class="onboarding" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <div class="wrap">
         <div class="onboarding__cnt">
           <h2 class="onboarding__title primary-title">Go cross-chain in 3 easy steps</h2>
@@ -747,7 +752,7 @@
       </div>
     </section>
 
-    <section class="examples">
+    <section class="examples" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <div class="wrap">
         <div class="examples__cnt">
           <h2 class="examples__title primary-title">Examples</h2>
@@ -801,7 +806,7 @@
       </div>
     </section>
 
-    <section class="go-crosschain">
+    <section class="go-crosschain" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <div class="go-crosschain__cnt">
         <img src="img/crosschain-icon.svg" alt="">
         <h2 class="go-crosschain__title primary-title">Go cross-chain!</h2>
@@ -809,7 +814,7 @@
       </div>      
     </section>
 
-    <section class="faq">
+    <section class="faq" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
       <div class="wrap">
         <div class="faq__cnt">
           <h2 class="faq__title primary-title">Frequently Asked Questions</h2>
@@ -908,6 +913,119 @@
 </footer>
   </div>
 
-  <script src="./js/app.min.js?_v=20230407175656"></script>
+  <script src="./js/app.min.js?_v=20230410201225"></script>   
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230410201225"></script>
+  <script>
+    particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+  </script>
 </body>
 </html>

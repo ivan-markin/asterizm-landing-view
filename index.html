@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230410201735">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230410201735" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230412023058">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230412023058" rel="stylesheet">
   <title>Asterizm</title>
 </head>
 
@@ -69,12 +69,12 @@
 	<nav class="main-menu main-menu_mobile">
 	<ul class="main-menu__list">
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="">About</a>
+			<a class="main-menu__link" href="#aboutSection">About</a>
 		</li>
 		<li class="main-menu__item main-menu__item_dropdown">
-			<a class="main-menu__link" href="">Community</a>
+			<a class="main-menu__link">Community</a>
 			<div class="dropdown">
-				<span class="dropdown__title">We are in social media</span>
+				<!-- <span class="dropdown__title">We are in social media</span> -->
 				<div class="dropdown__links">
 					<div class="dropdown__link">
 						<div class="dropdown__link-icon">
@@ -91,17 +91,17 @@
 						</div>
 						<div class="dropdown__link-title">
 							<span class="dropdown__link-name">Telegram</span>
-							<a class="dropdown__link-caption" href="https://t.me/asterizm_protocol" target="_blank">Follow us</a>
+							<a class="dropdown__link-caption" href="https://t.me/asterizm_protocol" target="_blank">Chat with us</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="">Docs</a>
+			<a class="main-menu__link" href="https://docs.asterizm.io" target="_blank">Docs</a>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="">Blog</a>
+			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
 		</li>
 		<li class="main-menu__item">
 			<a class="main-menu__link" href="https://asterizm.io/white-paper/" target="_blank">White paper</a>
@@ -121,16 +121,17 @@
           
           <header class="header header_main">
 	<img class="header__logo" src="img/asterizm-logo.svg" width="183" height="32" alt="">
+	<img class="header__logo header__logo_short" src="img/asterizm-logo_short.svg" alt="">
 	
 	<nav class="main-menu main-menu_header">
 	<ul class="main-menu__list">
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="">About</a>
+			<a class="main-menu__link" href="#aboutSection">About</a>
 		</li>
 		<li class="main-menu__item main-menu__item_dropdown">
-			<a class="main-menu__link" href="">Community</a>
+			<a class="main-menu__link">Community</a>
 			<div class="dropdown">
-				<span class="dropdown__title">We are in social media</span>
+				<!-- <span class="dropdown__title">We are in social media</span> -->
 				<div class="dropdown__links">
 					<div class="dropdown__link">
 						<div class="dropdown__link-icon">
@@ -147,17 +148,17 @@
 						</div>
 						<div class="dropdown__link-title">
 							<span class="dropdown__link-name">Telegram</span>
-							<a class="dropdown__link-caption" href="https://t.me/asterizm_protocol" target="_blank">Follow us</a>
+							<a class="dropdown__link-caption" href="https://t.me/asterizm_protocol" target="_blank">Chat with us</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="">Docs</a>
+			<a class="main-menu__link" href="https://docs.asterizm.io" target="_blank">Docs</a>
 		</li>
 		<li class="main-menu__item">
-			<a class="main-menu__link" href="">Blog</a>
+			<a class="main-menu__link" href="https://twitter.com/Asterizm_layer" target="_blank">Blog</a>
 		</li>
 		<li class="main-menu__item">
 			<a class="main-menu__link" href="https://asterizm.io/white-paper/" target="_blank">White paper</a>
@@ -170,40 +171,44 @@
 	<button class="header__menu-btn menu-open"></button>
 </header>
 
-          <img class="hero__bg-image" src="img/hero-image.png" alt="">
+          <!-- <img class="hero__bg-image" src="img/hero-image.png" alt=""> -->
+          <img class="hero__bg-image-alt" src="img/hero-image_alt.svg" alt="">
           <img class="hero__bottom-glow" src="img/hero-bottom-glow.png" alt="">
 
           <div class="hero__text-block">
-            <span class="hero__top-title">Introducing Asterizm</span>
+            <!-- <span class="hero__top-title">Introducing Asterizm</span> -->
             <h1 class="hero__title primary-title">
               Perform fast and confidential cross-chain transactions without overpaying
             </h1>
             <span class="primary-subtitle">
               Save money on transactions, avoid regulatory fines and avoid data theft risks with Asterizm
             </span>
-            <div class="hero__cta">
+            <div class="hero__cta">              
               <a class="hero__main-btn btn btn_primary" href="">
-                Go cross-chain!
+                Go cross-chain
                 <img src="img/btn-arrow.svg" width="20" height="11" alt="">
               </a>
-              <a class="btn btn_primary btn_black" href="https://asterizm.io/white-paper/" target="_blank">
+              <!-- <a class="hero__wp-btn btn btn_primary btn_black" href="https://asterizm.io/white-paper/" target="_blank">
                 White paper
-              </a>
+              </a> -->
             </div>
           </div>
 
-          <img class="hero__secure-badge" src="img/secure-badge.svg" alt="">
+          <div class="hero__badges">
+            <a class="hero__badges-item" href="https://hashex.org/" target="_blank"><img src="img/audit-badge.svg" alt=""></a>
+            <a class="hero__badges-item" href="https://www.techstars.com/" target="_blank"><img src="img/backed-badge.svg" alt=""></a>
+          </div>          
 
           <div class="hero__scroll-down">
             <img src="img/mouse-icon.svg" width="27" height="46" alt="">
-            Scroll to explore
+            Scroll<br>to explore
           </div>
 
         </div>
       </div>
     </section>
 
-    <section class="why-asterizm" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <section class="why-asterizm" data-aos="fade" data-aos-duration="500">
       <div class="wrap">        
         <div class="why-asterizm__cnt">
           <h2 class="why-asterizm__title primary-title">Why Asterizm?</h2>
@@ -288,10 +293,10 @@
       </div>
     </section>
 
-    <section class="data" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <section class="data" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
         <div class="data__cnt">
-          <h2 class="data__title primary-title">Your data belongs to you</h2>
+          <h2 class="data__title primary-title">Your data belongs to&nbsp;you</h2>
           <div class="data__cta">
             <a class="data__btn data__prev-btn btn btn_primary" href="">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -335,7 +340,7 @@
       </div>
     </section>
 
-    <section class="supported" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">      
+    <section class="supported" data-aos="fade" data-aos-duration="500">      
       <div class="supported__cnt">
         <h2 class="supported__title primary-title">Chains supported</h2>        
         <div class="supported__networks-cnt">
@@ -478,7 +483,7 @@
       </div>
     </section>
 
-    <section class="how-it-works" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">            
+    <section class="how-it-works" data-aos="fade" data-aos-duration="500">            
       <h2 class="how-it-works__title primary-title">How it works</h2>
       <div class="how-it-works__cnt">
         <div class="wrap">
@@ -496,8 +501,8 @@
                   <img src="img/github-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="">GitHub</a>
-                  <span class="how-it-works__link-descr">Learn docs</span>
+                  <a class="how-it-works__link-name" href="https://github.com/Asterizm-Layer/asterizm-contracts" target="_blank">GitHub</a>
+                  <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
                 </div>
               </div>
               <div class="how-it-works__link">
@@ -505,8 +510,8 @@
                   <img src="img/medium-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="">Medium</a>
-                  <span class="how-it-works__link-descr">Go to the medium</span>
+                  <a class="how-it-works__link-name">Medium <img src="img/soon-badge.svg" alt=""></a>
+                  <!-- <span class="how-it-works__link-descr">Go to the medium</span> -->
                 </div>
               </div>
               <div class="how-it-works__link">
@@ -515,7 +520,7 @@
                 </div>
                 <div class="how-it-works__link-title">
                   <a class="how-it-works__link-name" href="https://asterizm.io/white-paper/" target="_blank">White Paper</a>
-                  <span class="how-it-works__link-descr">Learn docs</span>
+                  <!-- <span class="how-it-works__link-descr">Learn docs</span> -->
                 </div>
               </div>
               <div class="how-it-works__link">
@@ -523,8 +528,8 @@
                   <img src="img/docs-link-icon.svg" alt="">
                 </div>
                 <div class="how-it-works__link-title">
-                  <a class="how-it-works__link-name" href="">Docs</a>
-                  <span class="how-it-works__link-descr">Read docs</span>
+                  <a class="how-it-works__link-name" href="https://docs.asterizm.io" target="_blank">Docs</a>
+                  <!-- <span class="how-it-works__link-descr">Read docs</span> -->
                 </div>                
               </div>
             </div>
@@ -532,7 +537,7 @@
         </div>
       </div>  
       
-      <div class="how-it-works__description">
+      <div class="how-it-works__description" id="aboutSection">
         <div class="wrap">
           <div class="how-it-works__description-cnt">
             <h3 class="how-it-works__description-title primary-title">
@@ -540,15 +545,23 @@
             </h3>
             <div class="how-it-works__description-blocks">
               <div class="how-it-works__description-block">
-                <img src="img/asterizm-connector.svg" alt="">
+                <picture>
+                  <source srcset="img/asterizm-connector.svg" media="(min-width: 769px)">
+                  <source srcset="img/asterizm-connector_mobile.svg" media="(max-width: 768px)">
+                  <img src="img/asterizm-connector.svg" alt="">
+                </picture>                
                 <p class="how-it-works__description-block-text">
                   An on-chain module that checks the validity and integrity of the transactions.
                 </p>
               </div>
               <div class="how-it-works__description-block">
-                <img src="img/asterizm-relayers.svg" alt="">
+                <picture>
+                  <source srcset="img/asterizm-relayers.svg" media="(min-width: 769px)">
+                  <source srcset="img/asterizm-relayers_mobile.svg" media="(max-width: 768px)">
+                  <img src="img/asterizm-relayers.svg" alt="">
+                </picture>                
                 <p class="how-it-works__description-block-text">
-                  An on-chain module that checks the validity and integrity of the transactions.
+                  Off-chain module consisting of two independent entities that encrypt, decrypt and transmit the data.
                 </p>
               </div>
             </div> 
@@ -557,7 +570,7 @@
       </div>      
     </section>
 
-    <section class="steps" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <section class="steps" data-aos="fade" data-aos-duration="500">
       <h2 class="steps__title primary-title">Cross-chain transaction flow</h2>
       <!-- <p class="steps__subtitle">
         Get Started Now! It won't take you long to get ready, and the result will not make itself long to wait!
@@ -614,7 +627,7 @@
               <h3 class="steps__description-title primary-title">Step 1</h3>
               <p class="steps__description-text">
                 <span>The client implements a&nbsp;smart contract using an&nbsp;abstract class from Asterizm and deploys it&nbsp;to&nbsp;the required networks.</span>
-                <span>The _initAsterizmTransferEvent() method is&nbsp;used to&nbsp;initiate a&nbsp;cross-chain transaction on&nbsp;the contract. The data and parameters of&nbsp;the cross-chain transaction are transmitted to&nbsp;it.</span>
+                <span>The <b>_initAsterizmTransferEvent()</b> method is&nbsp;used to&nbsp;initiate a&nbsp;cross-chain transaction on&nbsp;the contract. The data and parameters of&nbsp;the cross-chain transaction are transmitted to&nbsp;it.</span>
                 <span>The transaction can contain arbitrary information and one or&nbsp;multiple actions (instructions) to&nbsp;be&nbsp;performed on&nbsp;the destination networks.</span>
               </p>
             </div>
@@ -711,7 +724,7 @@
       </div>      
     </section>
 
-    <section class="onboarding" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <section class="onboarding" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
         <div class="onboarding__cnt">
           <h2 class="onboarding__title primary-title">Go cross-chain in 3 easy steps</h2>
@@ -743,7 +756,7 @@
               <div class="onboarding__item-content">
                 <h3 class="onboarding__item-title">Run cross-chain operations!</h3>
                 <span class="onboarding__item-text">
-                  Send and receive your first cross-chain message by calling the _initAsterizmTransferEvent() method on your Asterizm Client Contract
+                  Send and receive your first cross-chain message by calling the <b>_initAsterizmTransferEvent()</b> method on your Asterizm Client Contract
                 </span>
               </div>
             </div>
@@ -752,7 +765,7 @@
       </div>
     </section>
 
-    <section class="examples" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <section class="examples" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
         <div class="examples__cnt">
           <h2 class="examples__title primary-title">Examples</h2>
@@ -766,7 +779,7 @@
                     <span class="examples__tabs-item-title">Claimer.sol</span>
                   </div>
                   <p class="examples__tabs-item-content">
-                    Asterizm User Application example to demonstrate message sending.
+                    Cross-chain distribution of the token accumulated in the protocol to several networks with a single transaction at claim.
                   </p>
                 </div>
                 <div class="examples__tabs-item">
@@ -775,7 +788,7 @@
                     <span class="examples__tabs-item-title">MultichainToken.sol</span>
                   </div>
                   <p class="examples__tabs-item-content">
-                    Asterizm User Application example to demonstrate message sending.
+                    Distribute the emission across different networks depending on the demand for tokens in each network.
                   </p>
                 </div>
                 <div class="examples__tabs-item">
@@ -784,12 +797,12 @@
                     <span class="examples__tabs-item-title">GasStation.sol</span>
                   </div>
                   <p class="examples__tabs-item-content">
-                    Asterizm User Application example to demonstrate message sending.
+                    Top up your gas token balance in multiple chains with a single transaction.
                   </p>
                 </div>
               </div>  
               
-              <a class="examples__link" href="">
+              <a class="examples__link" href="https://github.com/Asterizm-Layer/asterizm-contracts/tree/master/contracts/demo" target="_blank">
                 <img src="img/examples-link-arrow.svg" alt="">
                 View more code examples on GitHub
               </a>
@@ -806,7 +819,7 @@
       </div>
     </section>
 
-    <section class="go-crosschain" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <section class="go-crosschain" data-aos="fade" data-aos-duration="500">
       <div class="go-crosschain__cnt">
         <img src="img/crosschain-icon.svg" alt="">
         <h2 class="go-crosschain__title primary-title">Go cross-chain!</h2>
@@ -814,7 +827,7 @@
       </div>      
     </section>
 
-    <section class="faq" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
+    <!-- <section class="faq" data-aos="fade" data-aos-duration="500">
       <div class="wrap">
         <div class="faq__cnt">
           <h2 class="faq__title primary-title">Frequently Asked Questions</h2>
@@ -857,7 +870,7 @@
           </div>
         </div>
       </div>      
-    </section>
+    </section> -->
 
     <footer class="footer @@className">
 	<div class="wrap">
@@ -881,27 +894,27 @@
 				<div class="footer__menu-col">
 					<span class="footer__menu-title">Tools & References</span>
 					<ul class="footer__menu-list">
-						<li class="footer__menu-item"><a href="">Asterizm Scanner (soon)</a></li>
-						<li class="footer__menu-item"><a href="">Docs</a></li>
+						<li class="footer__menu-item"><a>Asterizm Scanner <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a href="https://docs.asterizm.io" target="_blank">Docs</a></li>
 						<li class="footer__menu-item"><a href="https://asterizm.io/white-paper/" target="_blank">White paper</a></li>					
 					</ul>
 				</div>
 				<div class="footer__menu-col">
 					<span class="footer__menu-title">Community</span>
 					<ul class="footer__menu-list">
-						<li class="footer__menu-item"><a href="">Media kit</a></li>
+						<li class="footer__menu-item"><a>Media kit <img src="img/soon-badge.svg" alt=""></a></li>
 						<li class="footer__menu-item"><a href="https://twitter.com/Asterizm_layer" target="_blank">Twitter</a></li>
-						<li class="footer__menu-item"><a href="">Medium</a></li>
+						<li class="footer__menu-item"><a>Medium <img src="img/soon-badge.svg" alt=""></a></li>
 						<li class="footer__menu-item"><a href="https://t.me/asterizm_protocol" target="_blank">Telegram</a></li>
-						<li class="footer__menu-item"><a href="">Discord</a></li>
+						<li class="footer__menu-item"><a>Discord <img src="img/soon-badge.svg" alt=""></a></li>
 					</ul>
 				</div>
 				<div class="footer__menu-col">
 					<span class="footer__menu-title">Legal</span>
 					<ul class="footer__menu-list">
-						<li class="footer__menu-item"><a href="">Privacy Policy</a></li>
-						<li class="footer__menu-item"><a href="">Terms of Use</a></li>
-						<li class="footer__menu-item"><a href="">Cookie Policy</a></li>				
+						<li class="footer__menu-item"><a>Privacy Policy <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a>Terms of Use <img src="img/soon-badge.svg" alt=""></a></li>
+						<li class="footer__menu-item"><a>Cookie Policy <img src="img/soon-badge.svg" alt=""></a></li>				
 					</ul>
 				</div>
 			</div>
@@ -913,8 +926,8 @@
 </footer>
   </div>
 
-  <script src="./js/app.min.js?_v=20230410201735"></script>   
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230410201735"></script>
+  <script src="./js/app.min.js?_v=20230412023058"></script>   
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js?_v=20230412023058"></script>
   <script>
     particlesJS("particles-js", {
   "particles": {

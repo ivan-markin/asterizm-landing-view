@@ -2874,8 +2874,16 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-animation: translateLogos 120s linear infinite alternate;
-          animation: translateLogos 120s linear infinite alternate;
+  -webkit-animation-name: translateLogos;
+          animation-name: translateLogos;
+  -webkit-animation-duration: 120s;
+          animation-duration: 120s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .supported__networks-bottom {
@@ -2885,7 +2893,15 @@ template {
   -webkit-transform: translateX(30px);
       -ms-transform: translateX(30px);
           transform: translateX(30px);
-  animation: translateLogos 120s linear infinite alternate-reverse;
+  -webkit-animation-name: translateLogos;
+          animation-name: translateLogos;
+  -webkit-animation-duration: 120s;
+          animation-duration: 120s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 .why-asterizm {
@@ -3704,12 +3720,13 @@ fieldset {
   }
 
   .supported__networks-top {
-    -webkit-animation: translateLogos 40s linear infinite alternate;
-            animation: translateLogos 40s linear infinite alternate;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
   }
 
   .supported__networks-bottom {
-    animation: translateLogos 40s linear infinite alternate-reverse;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
   }
 
   .why-asterizm {
